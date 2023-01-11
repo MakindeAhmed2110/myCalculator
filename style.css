@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+@import url('https://fonts.cdnfonts.com/css/archivo-black');
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #fff, transparent, #f5f8ff #fff);
+    background-repeat: no-repeat;
+}
+
+.body-content {
+    padding: 0 150px;
+}
+nav {
+    z-index: 5;
+    height: 80px;
+    width: 100%;
+    margin-top: 20px;
+    list-style-type: none;
+}
+label.logo {
+    font-size: 35px;
+    line-height: 80px;
+    font-family: 'Kanit';
+}
+label.logo span {
+    color: #1b9dff;
+}
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    list-style-type: none;
+}
+nav ul li a {
+    padding: 7px 13px;
+    font-size: 17px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+a.active,
+a:hover {
+    background: #1b9bff;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #333;
+    float: right;
+    line-height: 80px;
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+.intro {
+    display: flex;
+    margin-top: 30px;
+}
+.intro img {
+    margin-top: -50px;
+    float: right;
+    float: right;
+}
+.intro-content .header {
+    font-size: 64px;
+    font-family: 'Kanit';
+    color: #333;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    line-height: 60px;
+    padding-top: 80px;
+    
+}
+
+.intro-content .header-explain {
+    padding-top: 30px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.header-btn {
+    margin-top: 40px;
+}
+
+.header-btn button {
+    background: #1b9bff;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    height: 50px;
+    width: 150px;
+    color: #ffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.header-btn button a, .calculator a{
+    color: #fff;
+}
+.section-two{
+    display : flex;
+    
+}
+.section-two img{
+    width : 900px;
+   margin-left: -200px;
+}
+.section-content{
+    padding-top: 40px;
+}
+.section-content h1{
+    font-family: 'archivo black';
+    font-size: 36px;
+    text-align: center;
+}
+ol li{
+    font-family: 'Poppins';
+    font-size: 24px;
+    margin-top: 5px;
+}
+ol li{
+    list-style-type: bullet;
+}
+.usage-first input{
+    border : none;
+    background: #1b9bff;
+    width : 40px;
+    height : 40px;
+    border-radius: 20px;
+    color : #fff;
+    font-size: 24px;
+}
+.calculator{
+    width :400px;
+    height : 50px;
+    border : none;
+    background : #1b9bff;
+    color : #fff;
+    font-size: 21px;
+    font-family: 'Kanit';
+    box-shadow: 10px 10px  #0082e6ba;
+    border-radius : 30px;
+    display : block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.fa-twitter{
+    border: none;
+  height: 50px;
+  width: 50px;
+  background: #1DA1F2;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 32px;
+  padding-top: 10px;
+  text-align: center;
+}
+ .fa-github {
+    border: none;
+    height: 50px;
+    width: 50px;
+    background: #333;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 32px;
+    padding-top: 10px;
+    text-align: center;
+  }
+  .footer{
+    margin-top: 100px;
+    display : flex;
+    justify-content: space-between;
+  }
+  .footer h2{
+    float : right;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 28px;
+    cursor : pointer;
+  }
+#check {
+    display: none;
+}
+
+
+@media (max-width : 952px) {
+    label.logo {
+        font-size: 30px;
+    }
+
+    .body-content {
+        padding: 0 100px;
+    }
+
+    nav ul  {
+        font-size: 16px;
+        margin: 0px;
+    }
+}
+
+@media (max-width : 858px) {
+    .checkbtn{
+        display : block;
+    }
+    .body-content {
+        padding: 0 50px;
+    }
+    ul {
+        position: fixed;
+        width: 70%;
+        height: 100vh;
+        background: #fff;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+    .intro {
+        display: flex;
+        margin-top: 20px;
+    }
+    .intro img {
+        margin-top: -30px;
+        width : 500px;
+    }
+    .section-two{
+        margin-top: 50px;
+    }
+    .section-two img{
+        width : 700px;
+       margin-left: -200px;
+    }
+    .section-content{
+        padding-top: 20px;
+        margin-left: -50px;
+    }
+    .section-content h1{
+        font-family: 'archivo black';
+        font-size: 32px;
+        text-align: left;
+    }
+    ol li{
+        font-size: 18px;
+    }
+    .intro-content .header{
+        font-size: 58px;
+        padding-top: 60px;
+    }
+    .intro-content .header-explain{
+        font-size: 16px;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+    #close{
+        display: block;
+    }
+}
+/* 2nd breakpoint for tablet-ipad */
+@media (max-width : 752px){
+    .intro-content .header{
+        font-size: 52px;
+        padding-top: 60px;
+    }
+    .intro img {
+        margin-top: -20px;
+        width : 400px;
+    }
+    .section-two img{
+        width : 600px;
+       margin-left: -200px;
+    }
+    .section-content{
+        padding-top: 20px;
+        margin-left: -70px;
+    }
+}
+/* First Breakpoint For Mobile Phones*/
+@media (max-width : 642px){
+    .intro-content .header{
+        font-size: 44px;
+        padding-top: 40px;
+        line-height: 40px;
+    }
+    .intro-content .header-explain{
+        font-size: 14px;
+    }
+    .intro img {
+        width : 300px;
+        margin-top: 20px;
+    }
+    .section-two img{
+        width : 600px;
+       margin-left: -200px;
+    }
+    .section-content{
+        padding-top: 20px;
+        margin-left: -90px;
+    }
+    .section-content h1{
+        font-size: 28px;
+    }
+    ol li{
+        font-size: 16px;
+    }
+}
+@media (max-width : 500px){
+   .intro{
+    display : block;
+   }
+   .intro img{
+    width : 100%;
+   }
+   .section-two{
+     display: block;
+   }
+   .section-two img{
+    width : 600px;
+   margin-left: -300px;
+}
+.section-content{
+   margin-top: -300px;
+   margin-left: 60px;
+}
+.section-content h1{
+    font-size:22px;
+}
+ol li{
+    font-size: 16px;
+} 
+.usage-first input{
+    width : 20px;
+    height: 20px;
+    font-size : 14px;
+}
+.calculator{
+    width : 200px;
+    font-size: 18px;
+    box-shadow: 5px 5px #1DA1F2;
+    margin-top: 120px;
+}
+.fa-twitter, .fa-github{
+  font-size: 16px;
+  height: 30px;
+  width: 30px
+}
+.footer h2{
+    font-size: 18px;
+}
+}
+
+@media (max-width : 358px) {
+    label.logo {
+        font-size: 24px;
+    }
+
+    .body-content {
+        padding: 0 20px;
+    }
+}
